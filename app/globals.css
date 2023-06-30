@@ -1,27 +1,110 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --shadow-1: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #222831;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00adb5;
+  border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.shadow1 {
+  box-shadow: var(--shadow-1);
+}
+.shadow1:hover {
+  box-shadow: 0px 1px 9px #00adb5, -10px -10px 19px #262a2e;
+}
+
+.bg-primary {
+  @apply bg-[#222831];
+}
+.bg-secondary {
+  @apply bg-[#393e46];
+}
+.bg-accent {
+  @apply bg-[#00adb5];
+}
+
+.paddingX {
+  @apply sm:px-16 px-6;
+}
+
+.paddingY {
+  @apply py-2;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #fff;
+
+  font-family: "Poppins", sans-serif;
+}
+
+.grad-text {
+  /** TEXT GRADIENT */
+  color: #eeeeee;
+  background-image: -webkit-linear-gradient(
+    0deg,
+    #eeeeee 20%,
+    #00f2ff 40%,
+    #22a4ab 60%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-bg {
+  background-image: url("/hero-bg.jpg");
+  background-size: cover;
+}
+
+.custom-btn {
+  padding: 10px 25px;
+  background-color: #00f2ff;
+
+  border: 1px solid #22a4ab;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+label {
+  color: white;
+  display: block;
+  margin-block: 15px;
+}
+
+input {
+  width: 100%;
+  max-width: 500px;
+  padding-left: 5px;
+  border-radius: 5px;
+  height: 35px;
 }
