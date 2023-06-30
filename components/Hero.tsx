@@ -79,7 +79,9 @@ const Hero = () => {
           </div>
           <div>
             <button className="custom-btn rounded-2xl">
-              <Link href="#">Download Resume</Link>
+              <Link href="https://docs.google.com/document/d/1nXKi9Oa2Z6ffR4dIxNY5frMcymkp_aw_C0rjwb5yPWM/edit?usp=sharing">
+                Download Resume
+              </Link>
             </button>
           </div>
         </div>
