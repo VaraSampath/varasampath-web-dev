@@ -69,17 +69,17 @@ const Hero = () => {
               </Link>
             </div>
             <div className="flex justify-center items-center shadow1 w-[60px] h-[60px] ">
-              <Link
-                target="_blank"
-                href="https://wa.me/919603178894"
-              >
+              <Link href="https://wa.me/919603178894">
                 <AiOutlineWhatsApp className=" text-[30px]" />
               </Link>
             </div>
           </div>
           <div>
             <button className="custom-btn rounded-2xl">
-              <Link href="https://docs.google.com/document/d/1nXKi9Oa2Z6ffR4dIxNY5frMcymkp_aw_C0rjwb5yPWM/edit?usp=sharing">
+              <Link
+                target="_blank"
+                href="https://docs.google.com/document/d/1nXKi9Oa2Z6ffR4dIxNY5frMcymkp_aw_C0rjwb5yPWM/edit?usp=sharing"
+              >
                 Download Resume
               </Link>
             </button>
