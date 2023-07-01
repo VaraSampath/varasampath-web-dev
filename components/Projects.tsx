@@ -61,6 +61,7 @@ const Projects = () => {
                     ))}
                   </div>
                   <Link
+                    target="_blank"
                     href={each.linkUrl}
                     className="flex gap-2 w-max items-center capitalize font-semibold text-white hover:text-[#00adb5]"
                   >
